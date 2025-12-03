@@ -1,5 +1,6 @@
 use crate::days::day1::Day1;
 use crate::days::day2::Day2;
+use crate::days::day3::Day3;
 use std::fmt::Debug;
 
 mod base;
@@ -8,6 +9,7 @@ mod days;
 fn main() {
     evaluate_day(Day1);
     evaluate_day(Day2);
+    evaluate_day(Day3);
 }
 
 fn evaluate_day<T: 'static, E: Debug + 'static>(day: impl base::Day<T, E> + 'static) {
